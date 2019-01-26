@@ -20,6 +20,9 @@ struct color_t {
     int b;
 };
 
+#define GRAVITY 0.0005
+#define DAMP 0.0008
+
 // nonedit.cpp
 GLFWwindow *initGLFW(int width, int height);
 GLuint     LoadShaders(const char *vertex_file_path, const char *fragment_file_path);
@@ -75,11 +78,23 @@ bool detect_collision(bounding_box_t a, bounding_box_t b);
 
 extern float screen_zoom, screen_center_x, screen_center_y;
 void reset_screen();
+double get_random(double min, double max);
 
 // ---- Colors ----
-extern const color_t COLOR_RED;
-extern const color_t COLOR_GREEN;
-extern const color_t COLOR_BLACK;
-extern const color_t COLOR_BACKGROUND;
+const color_t COLOR_RED = { 236, 100, 75 };
+const color_t COLOR_GREEN = { 135, 211, 124 };
+const color_t COLOR_BLACK = { 52, 73, 94 };
+const color_t COLOR_BACKGROUND = { 242, 241, 239 };
+const color_t COLOR_BLUE = { 0, 51, 204 };
+const color_t COLOR_BROWN = { 153, 102, 51 };
+const color_t COLOR_ORANGE = { 255, 102, 0 };
+const color_t COLOR_GRAY = { 179, 179, 179 };
+const color_t COLOR_DARK_GRAY = { 89, 89, 89 };
+const color_t COLOR_GOLD = { 255, 204, 0 };
+const color_t COLOR_BRIGHT_ORANGE = { 255, 51, 0 };
+const color_t COLOR_PURPLE = { 153, 51, 255 };
+const color_t COLOR_YELLOW = { 255, 255, 0 };
+const color_t COLOR_PINK = { 255, 0, 102 };
+const color_t COLOR_AQUA = { 51, 204, 255 };
 
 #endif

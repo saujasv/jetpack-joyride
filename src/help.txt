@@ -1,0 +1,16 @@
+JETPACK JOYRIDE
+
+To play, build, and run the graphics_asgn1 executable in the build folder.
+
+Gameplay:
+- Left and right arrow keys to move back and forward respectively
+- Space to move up using the jetpack
+- Down to drop water balloon
+- 3 lives
+
+Win points by collecting coins or fuel cans. Avoid the fire beams (they move!) and
+boomerangs. Fire beams take a life, and boomerangs cause you to lose points.
+In the green semicircular tunnel, you are protected from the boomerangs and
+beams.
+
+Have fun!
